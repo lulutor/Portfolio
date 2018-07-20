@@ -1,17 +1,44 @@
 
+/*******************Fonts**********************/
+@import url('https://fonts.googleapis.com/css?family=Oregano');
+
 /*******************Général********************/
 .body{
     margin: 0px;
 }
+/*******************MenuSidenav****************/
 
+a.brand-logo {
+    font-size:26px;
+    font-family: 'Oregano', cursive;
+}
+
+.menu-icon{
+    font-size: 60px;
+    color: black;
+}
+
+.sidenav {
+    background-color:white;
+}
+
+.container-background {
+    background-color:#ffe0b2;
+}
+
+.user-view{
+    background-color:#ffe0b2;
+}
 /*******************Profil*********************/
+
 .profil_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 600px;
     text-align: center;
-    margin-left: 100px; 
+    margin-left: 100px;
+    font-family: 'Oregano', cursive;
 }
 
 h1{
@@ -22,10 +49,14 @@ h1{
     text-align: center;
     font-size: 38px;
     font-style: italic;
+    font-family: 'Oregano', cursive;
+    margin-bottom:0px;
 }
 
-/*******************Création*******************/
-.creation_container {
+
+
+/*******************Compétence******************/
+.container-competence {
     display: grid;
     grid-template-rows: repeat(2,1fr);
     grid-template-columns: repeat(3,1fr);
@@ -35,12 +66,13 @@ h1{
     width: 100%;
 }
 
-svg {
+svg, .available-on-item img{
     width:150px;
+    margin-bottom: 40px;
 }
 
 .available-on{
-    background-color: #1a1a1a;
+    background-color: #ffcc80;
     margin-top: 8px;
     position:relative;
 }
@@ -50,7 +82,7 @@ svg {
 }
 
 .available-title h2{
-    color:#fff;
+    color:#000000;
     font-size: 30px;
 }
 
@@ -75,7 +107,7 @@ svg {
 }
 
 .available-on-item:hover{
-    background-color:#121212;
+    background-color:#ffcc80;
 }
 
 .available-on-item img, .available-on-item svg{
@@ -107,10 +139,37 @@ svg {
 .available-on-inner h2{
     text-align: center;
     font-weight: 300;
-    color: #D7DADB;
+    color: #000000;
     font-size:38px;
+    font-family:'Oregano', cursive;
 }
 
 .available-on-item:hover div.available-on-inner{
     opacity: 1;
 }
+
+/*******************Créations*******************/
+
+.container-creation {
+    text-align: center;
+}
+.image-creation {
+    width: 70%;
+    margin-top:20px;
+    transition: transform .2s; /* Animation */
+}
+.image-creation:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    border: 4px solid white;
+}
+/*********************Footer********************/
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }

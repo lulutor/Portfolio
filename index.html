@@ -17,29 +17,66 @@
     <title>Developpeur Web</title>
 </head>
 <body>
-  <div class="container">
-    <div class="row profil_container">
-      <div class="photo_profil">
-        <img src="images/photo_profil.png">
+
+<!--NavBar-->
+  <nav class=" grey darken-4">
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo center">La connaissance s’acquiert par l’expérience, tout le reste n’est que de l’information. – Albert Einstein</a>
       </div>
-      <div>
-        <h1>Lucas Nandan</h1>
-        <h3>Developpeur Web<br><span>Junior</span></h3>
-      </div>
-    </div>
-    <div class="row profil_p">
-      <p>"Lorem ipsum Lorem isum Lorem ipsum lorem ipsum lorem ipsum"</p>
+    </nav>        
+  
+  <!-- Sidebar -->
+  <div class="container-background">
+    <div class="container container_number_zero">
+      <ul id="slide-out" class="sidenav">
+        <li><div class="user-view">
+          <div class="background">
+            <img src="images/chat.jpg">
+          </div>
+          <a href="#user"><img class="circle" src="images/chat.jpg"></a>
+          <a href="#name"><span class="white-text name">Lucas Nandan</span></a>
+          <a href="#email"><span class="white-text email">lucas.nandan@gmail@gmail.com</span></a>
+        </div></li>
+        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+        <li><a href="#!">Second Link</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">Subheader</a></li>
+        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+      </ul>
+      <a href="#" data-target="slide-out" class="sidenav-trigger "><i class="material-icons menu-icon ">menu</i></a>
     </div>
   </div>
-    <div class="parallax-container">
-      <div class="parallax"><img src="images/tactile.jpg"></div>
+  
+  <!-- Profil -->
+  <div class="container-background">
+    <div class="container container_number_one">
+      <div class="row profil_container s6">
+        <div class="photo_profil">
+          <img src="images/photo_profil.png">
+        </div>
+        <div>
+          <h1>Lucas Nandan</h1>
+          <h3>Developpeur Web<br><span>Junior</span></h3>
+        </div>
+      </div>
+      <div class="row profil_p">
+        <p>"Lorem ipsum Lorem isum Lorem ipsum lorem ipsum lorem ipsum"</p>
+      </div>
     </div>
+  </div>
+
+  <!-- parallax 2 -->
+  <div class="parallax-container">
+    <div class="parallax"><img src="images/plage_phone.jpeg"></div>
+  </div>
+
+  <!--Compétences--> 
   <div class="container">  
-    <div class="row creation_container">
-        <a href="#">
+    <div class="row container-competence">
+        <a href="#html-creation" id="html">
           <div class="no-padding">
             <div class="available-on-item">
-              <svg viewBox="0 0 128 128">
+              <svg viewBox="0 0 128 128">  
                 <path fill="#E44D26" d="M19.037 113.876l-10.005-112.215h109.936l-10.016 112.198-45.019 12.48z"></path><path fill="#F16529" d="M64 116.8l36.378-10.086 8.559-95.878h-44.937z"></path><path fill="#EBEBEB" d="M64 52.455h-18.212l-1.258-14.094h19.47v-13.762h-34.511l.33 3.692 3.382 37.927h30.799zM64 88.198l-.061.017-15.327-4.14-.979-10.975h-13.817l1.928 21.609 28.193 7.826.063-.017z"></path><path fill="#fff" d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zM63.952 24.599v13.762h33.244l.276-3.092.628-6.978.329-3.692z"></path>
               </svg>
               <div class="available-on-inner">
@@ -48,7 +85,7 @@
             </div>
           </div>
         </a>
-        <a href="#">
+        <a href="#bootstrap-creation" id="bootstrap">
           <div class="no-padding">
             <div class="available-on-item">
                 <svg viewBox="0 0 128 128">
@@ -60,7 +97,7 @@
             </div>
           </div>
         </a>
-        <a href="#">
+        <a href="#javascript-creation" id="javascript">
           <div class="no-padding">
             <div class="available-on-item">
                 <svg viewBox="0 0 128 128">
@@ -72,7 +109,7 @@
             </div>
           </div>
         </a>
-        <a href="#">
+        <a href="#prestashop-creation" id="prestashop">
           <div class="no-padding">
             <div class="available-on-item">
               <img src="images/prestashop_icon.png">
@@ -82,7 +119,7 @@
             </div>
           </div>
         </a>
-        <a href="#">
+        <a href="#angular-creation" id="angular">
           <div class="no-padding">
             <div class="available-on-item">
               <svg viewBox="0 0 128 128">
@@ -94,7 +131,7 @@
             </div>
           </div>
         </a>
-        <a href="#">
+        <a href="#react-creation" id="react">
           <div class="no-padding">
             <div class="available-on-item">
                 <svg viewBox="0 0 128 128">
@@ -107,10 +144,52 @@
           </div>
         </a>
       </div>
-    <!-- footer -->
-    <div>
     </div>
-  </div>
+    
+    <!--Créations-->
+    <div class="container-background">
+      <div class="container">
+        <div class="row container-creation">
+          
+            <img class="image-creation" id="html-creation" src="images/html.png">
+          
+            <img class="image-creation" id="bootstrap-creation" src="images/bootstrap.png">
+          
+            <img class="image-creation" id="javascript-creation" src="images/javascript.png">
+          
+            <img class="image-creation" id="javascript2-creation" src="images/javascript2.png">
+          
+            <img class="image-creation" id="prestashop-creation" src="images/prestashop.png">
+          
+            <img class="image-creation" id="angular-creation" src="images/angular.png">
+          
+            <img class="image-creation" id="react-creation" src="images/react.png">
+          
+        </div>
+      </div> 
+     </div> 
+    <!-- footer -->
+    <footer class="page-footer  grey darken-4">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Arinfo</h5>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Hi guys</h5>
+            <ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright  grey darken-4">
+        <div class="container">
+        © 2018 Copyright Text
+        <a class="grey darken-4-text text-grey darken-4 right" href="#!">Lucas nandan</a>
+        </div>
+      </div>
+    </footer>
+
   <!--JavaScript at end of body for optimized loading-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
