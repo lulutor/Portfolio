@@ -5,7 +5,11 @@
 /*******************Général********************/
 .body{
     margin: 0px;
-    padding-left:0px!important;
+}
+
+html
+{
+overflow-x: hidden
 }
 /*******************MenuSidenav****************/
 
@@ -36,13 +40,11 @@ a.brand-logo {
 /*******************Profil*********************/
 
 .profil_container {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 400px;
     text-align: center;
-    margin-left: 100px;
     font-family: 'Oregano', cursive;
+    text-overflow: ellipsis;
 }
 
 
@@ -60,8 +62,7 @@ h5{
     margin-top:100px;
     margin-bottom:100px;
 }
-.slides{
-}
+
 
 /*******************Parallax********************/
 .image-parallax {
@@ -103,7 +104,7 @@ svg, .available-on-item img{
 
 .available-on-item{
     text-align: center;
-    min-height: 230px;
+    
     position: relative;
     -moz-transition:all 1s;
     -o-transition:all 1s;
@@ -148,6 +149,12 @@ svg, .available-on-item img{
     font-family:'Oregano', cursive;
 }
 
+@media screen and (max-width: 640px) {
+    .h2 {
+      font-size:15px;
+    }
+  }
+
 .available-on-item:hover div.available-on-inner{
     opacity: 1;
 }
@@ -188,4 +195,10 @@ body {
 .page-footer {
     background-color: rgb(182, 207, 229);;
     color: #FFFFFF;
+}
+
+.boutton-me-contacter {
+    display: flex;
+    justify-content: space-around;
+
 }

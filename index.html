@@ -18,11 +18,11 @@
 </head>
 <body>
 
-<div class="container"></div>
+<div class="contenu">
 <!--NavBar-->
   <nav>
       <div class="nav-wrapper">
-        <a href="#!" class="brand-logo center">Lucas Nandan - Développeur Web Junior</a>
+        <a href="#!" class="brand-logo center"><h4 class="flow-text">Lucas Nandan - Développeur Web Junior</h4></a>
       </div>
     </nav>        
   
@@ -30,7 +30,7 @@
   <div class="container-background">
     <div class="container container_number_zero">
       <ul id="slide-out" class="sidenav">
-        <li><div class="user-view">
+        <li><div class="sidenav-close user-view">
           <div class="background">
             <img src="images/chat.jpg">
           </div>
@@ -51,12 +51,12 @@
   <!-- Profil -->
   <div class="container-background">
     <div class="container container_number_one">
-      <div class="row profil_container">
+      <div class="profil_container">
         <div class="photo_profil">
           <img src="images/photo_profil.png">
         </div>
         <div>
-          <h5>ppppppppppppppppppppppppppppppppppppppppppppppppp</br>
+          <h5>pppppppppppppppppppppppp</h5><br>ppppppppppppppppppppppppp<br>
           ppppppppppppppppppppppppppppppppp</h5>
         </div>
       </div>
@@ -124,7 +124,7 @@
   <div class="container-background-competences col s12 m12 l12" >
     <div class="container">  
       <div class="row container-competence">
-          <a href="#html-creation" id="html">
+          <a href="#!" id="html">
             <div class="no-padding">
               <div class="available-on-item">
                 <svg viewBox="0 0 128 128">  
@@ -136,7 +136,7 @@
               </div>
             </div>
           </a>
-          <a href="#bootstrap-creation" id="bootstrap">
+          <a href="#!" id="bootstrap">
             <div class="no-padding">
               <div class="available-on-item">
                   <svg viewBox="0 0 128 128">
@@ -148,7 +148,7 @@
               </div>
             </div>
           </a>
-          <a href="#javascript-creation" id="javascript">
+          <a href="#!" id="javascript">
             <div class="no-padding">
               <div class="available-on-item">
                   <svg viewBox="0 0 128 128">
@@ -160,7 +160,7 @@
               </div>
             </div>
           </a>
-          <a href="#prestashop-creation" id="prestashop">
+          <a href="#!" id="prestashop">
             <div class="no-padding">
               <div class="available-on-item">
                 <img src="images/prestashop_icon.png">
@@ -170,7 +170,7 @@
               </div>
             </div>
           </a>
-          <a href="#angular-creation" id="angular">
+          <a href="#!" id="angular">
             <div class="no-padding">
               <div class="available-on-item">
                 <svg viewBox="0 0 128 128">
@@ -182,7 +182,7 @@
               </div>
             </div>
           </a>
-          <a href="#react-creation" id="react">
+          <a href="#!" id="react">
             <div class="no-padding">
               <div class="available-on-item">
                   <svg viewBox="0 0 128 128">
@@ -220,21 +220,45 @@
     </div> 
   </div> 
     
-    <!-- footer -->
+  <!-- footer -->
   <footer class="page-footer">
     <div class="container">
       <div class="row">
-        <div class="col l6 s12">
-          <h5>Arinfo</h5>
+        <div class="col l6 s12 boutton-me-contacter">
+          <h5>Me Contacter</h5>
+          <a class="btn-floating btn-large waves-effect blue-grey lighten-1"><i class="material-icons">arrow_drop_down
+              </i></a>
         </div>
-        <div class="col l4 offset-l2 s12">
-          <h5>Hi guys</h5>
-          <ul>
-          </ul>
-        </div>
+        <div class="row" id="formulaire">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                  <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="last_name" type="text" class="validate">
+                  <label for="last_name">Last Name</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="email" type="email" class="validate">
+                  <label for="email">Email</label>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="input-field col s12">
+                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">Textarea</label>
+                  </div>
+                </div>
+            </form>
+          </div>
       </div>
     </div>
   </footer>
+  <div>
   <!--JavaScript at end of body for optimized loading-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>

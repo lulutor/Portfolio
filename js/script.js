@@ -74,4 +74,9 @@ $(document).ready(function(){
     hide();
     $reactCreation.fadeIn(800);
   }); 
+
+  // boutton-formulaire
+
+  var $bouttonFormulaire = $('#formulaire')
 });
+
