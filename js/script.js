@@ -1,16 +1,16 @@
-// Parallax jQuery
+
 $(document).ready(function(){
+  // Parallax jQuery
   $('.parallax').parallax();
  
 
   //Navbar jQuery
+  $('.sidenav').sidenav();
 
-    $('.sidenav').sidenav();
-
+  //Slider
+  $('.slider').slider();
 
   //Animation : click compétence ==> Apparition Création
-
- var dataDom = []
 
   var $body = $('body');
   var $html = $('#html');
@@ -20,6 +20,7 @@ $(document).ready(function(){
   var $angular = $('#angular');
   var $react = $('#react');
 
+  var $containerBackgroundCreation = $('#container-background-creation'); 
   var $htmlCreation = $('#html-creation');
   var $bootstrapCreation = $('#bootstrap-creation');
   var $javascriptCreation = $('#javascript-creation');
@@ -39,13 +40,13 @@ $(document).ready(function(){
   }
 
   hide();
-  
+
   $body.fadeIn(1000);
 
   $html.on('click',function(){
     hide();
-    $htmlCreation.fadeIn(800);
-    
+    $htmlCreation.fadeIn(800); 
+    $containerBackgroundCreation.backgroundColor = '#DCDDE1';
   });
 
   $bootstrap.on('click',function(){
@@ -73,6 +74,4 @@ $(document).ready(function(){
     hide();
     $reactCreation.fadeIn(800);
   }); 
-
-
 });
