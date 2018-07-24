@@ -77,6 +77,22 @@ $(document).ready(function(){
 
   // boutton-formulaire
 
-  var $bouttonFormulaire = $('#formulaire')
+  var $formulaire = $('#formulaire');
+  var $btnFormulaireDown = $('#btn-formulaire-down');
+  var $btnFormulaireUp = $('#btn-formulaire-up');
+  $btnFormulaireUp.hide();
+  $formulaire.hide();
+  $btnFormulaireDown.on('click',function(){  
+    $formulaire.fadeIn(800);
+    $btnFormulaireUp.show();
+    $btnFormulaireDown.hide();
+    $("html, body").animate({ scrollBottom: $(document).height() }, 1000);
+  });
+  
+  $btnFormulaireUp.on('click',function(){  
+    $formulaire.hide();
+    $btnFormulaireUp.hide();
+    $btnFormulaireDown.show();
+  });
 });
 

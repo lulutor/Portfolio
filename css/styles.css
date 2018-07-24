@@ -5,6 +5,17 @@
 /*******************Général********************/
 .body{
     margin: 0px;
+    font-size: 16px;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 22px;
+  }
 }
 
 html
@@ -14,7 +25,7 @@ overflow-x: hidden
 /*******************MenuSidenav****************/
 
 nav {
-    background-color:rgb(182, 207, 229);
+    background-color:#8294AA;
 }
 a.brand-logo {
     font-size:26px;
@@ -31,26 +42,25 @@ a.brand-logo {
 }
 
 .container-background {
-    background-color:rgb(182, 207, 229);
+    background-color:#8294AA;
 }
 
 .user-view{
-    background-color:rgb(182, 207, 229);
+    background-color:#8294AA;
 }
 /*******************Profil*********************/
 
 .profil_container {
-    align-items: center;
-    height: 400px;
     text-align: center;
     font-family: 'Oregano', cursive;
-    text-overflow: ellipsis;
 }
-
 
 h5{
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-justify: auto;
 }
+
 
 
 /*******************Slider**********************/
@@ -104,7 +114,6 @@ svg, .available-on-item img{
 
 .available-on-item{
     text-align: center;
-    
     position: relative;
     -moz-transition:all 1s;
     -o-transition:all 1s;
@@ -120,12 +129,14 @@ svg, .available-on-item img{
     text-align: center;
     opacity: 1;
     font-size:40px;
-    padding-top: 90px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     transition: all 1s;
     -moz-transition: all 1s;
     -o-transition: all 1s;
     -webkit-transition: all 1s;
 }
+
 
 .available-on-item:hover img, .available-on-item:hover svg {
     opacity:0.05;
@@ -149,11 +160,10 @@ svg, .available-on-item img{
     font-family:'Oregano', cursive;
 }
 
-@media screen and (max-width: 640px) {
-    .h2 {
-      font-size:15px;
+@media screen and (min-width: 320px) {
+    .available-on-inner h2 {
+      font-size:20px;
     }
-  }
 
 .available-on-item:hover div.available-on-inner{
     opacity: 1;
@@ -193,7 +203,7 @@ body {
   }
 
 .page-footer {
-    background-color: rgb(182, 207, 229);;
+    background-color: rgb(182, 207, 229);
     color: #FFFFFF;
 }
 
@@ -202,3 +212,19 @@ body {
     justify-content: space-around;
 
 }
+
+label {
+    color: white!important;
+}
+
+.input-field input[type=text]:focus + label, .input-field input[type=email]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
+    color: #005eed !important;
+   }
+
+
+.input-field input[type=text]:focus, .input-field input[type=email]:focus, .materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #005eed !important;
+    box-shadow: 0 1px 0 0 #005eed !important;
+}
+
+

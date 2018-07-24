@@ -51,13 +51,12 @@
   <!-- Profil -->
   <div class="container-background">
     <div class="container container_number_one">
-      <div class="profil_container">
-        <div class="photo_profil">
-          <img src="images/photo_profil.png">
-        </div>
-        <div>
-          <h5>pppppppppppppppppppppppp</h5><br>ppppppppppppppppppppppppp<br>
-          ppppppppppppppppppppppppppppppppp</h5>
+      <div class="row">
+        <div class="profil_container">
+          <div class="photo_profil">
+            <img src="images/photo_profil.png">
+            <h5>Bonjour! je suis un développer web junior dynamique et toujours en quête de savoir!<h5>
+          </div>
         </div>
       </div>
     </div>
@@ -122,7 +121,8 @@
 
   <!--Compétences-->
   <div class="container-background-competences col s12 m12 l12" >
-    <div class="container">  
+    <div class="container"> 
+      <h5 class="center blue-grey-text">Compétences</h5> 
       <div class="row container-competence">
           <a href="#!" id="html">
             <div class="no-padding">
@@ -221,43 +221,47 @@
   </div> 
     
   <!-- footer -->
-  <footer class="page-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12 boutton-me-contacter">
-          <h5>Me Contacter</h5>
-          <a class="btn-floating btn-large waves-effect blue-grey lighten-1"><i class="material-icons">arrow_drop_down
-              </i></a>
-        </div>
-        <div class="row" id="formulaire">
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12 boutton-me-contacter">
+            <h5>Me Contacter <a href="#btn-envoyer" id="btn-formulaire-down" class="btn-floating btn-large waves-effect blue-grey lighten-1"><i class="material-icons">arrow_drop_down
+            </i></a><a id="btn-formulaire-up" class="btn-floating btn-large waves-effect blue-grey lighten-1"><i class="material-icons">arrow_drop_up
+            </i></a></h5>            
+          </div>
+          <div class="row" id="formulaire" action="https://formcarry.com/s/iid5F4KfFqR" method="POST" accept-charset="UTF-8">
             <form class="col s12">
               <div class="row">
                 <div class="input-field col s6">
-                  <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-                  <label for="first_name">First Name</label>
+                  <input id="first_name" type="text" class="validate" name="firstName">
+                  <label for="first_name">Prénom</label>
                 </div>
                 <div class="input-field col s6">
-                  <input id="last_name" type="text" class="validate">
-                  <label for="last_name">Last Name</label>
+                  <input id="last_name" type="text" class="validate" name="lastName">
+                  <label for="last_name">Nom</label>
                 </div>
               </div>
               <div class="row">
                 <div class="input-field col s12">
-                  <input id="email" type="email" class="validate">
+                  <input id="email" type="email" class="validate" name="email">
                   <label for="email">Email</label>
                 </div>
               </div>
               <div class="row">
-                  <div class="input-field col s12">
-                    <textarea id="textarea1" class="materialize-textarea"></textarea>
-                    <label for="textarea1">Textarea</label>
-                  </div>
+                <div class="input-field col s12">
+                  <textarea id="textarea1" class="materialize-textarea" name="anotherInput"></textarea>
+                  <label for="textarea1">Sujet</label>
                 </div>
+              </div>
+              <input type="hidden" name="_gotcha"><!-- use this to prevent spam -->
+              <button id="btn-envoyer" class="blue-grey btn waves-effect waves-light" type="submit" name="action">Envoyer
+                <i class="material-icons right">send</i>
+              </button>
             </form>
           </div>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
   <div>
   <!--JavaScript at end of body for optimized loading-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
