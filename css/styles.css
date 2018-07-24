@@ -1,7 +1,6 @@
 
 /*******************Fonts**********************/
-@import url('https://fonts.googleapis.com/css?family=Oregano');
-
+@import url('https://fonts.googleapis.com/css?family=Cabin|Josefin+Slab');
 /*******************Général********************/
 .body{
     margin: 0px;
@@ -20,16 +19,13 @@
 
 html
 {
-overflow-x: hidden
+overflow-x: hidden;
 }
 /*******************MenuSidenav****************/
 
-nav {
-    background-color:#8294AA;
-}
 a.brand-logo {
     font-size:26px;
-    font-family: 'Oregano', cursive;
+    font-family: 'Cabin', sans-serif;
 }
 
 .menu-icon{
@@ -42,31 +38,23 @@ a.brand-logo {
 }
 
 .container-background {
-    background-color:#8294AA;
+    background-color: rgba(182, 207, 229,0.9);
 }
 
 .user-view{
-    background-color:#8294AA;
+    background-color: rgb(182, 207, 229);
 }
 /*******************Profil*********************/
 
 .profil_container {
     text-align: center;
-    font-family: 'Oregano', cursive;
+    font-family: 'Cabin', sans-serif;
 }
-
-h5{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    text-justify: auto;
-}
-
-
 
 /*******************Slider**********************/
 
 .container-background-slider {
-    background-color:#FFFFFF;
+    background-image:#FFFFFF;
 }
 .slider {
     margin-top:100px;
@@ -81,13 +69,14 @@ h5{
 /*******************Compétence******************/
 .container-background-competences {
     background-color:#FFFFFF;
+    font-family: 'Cabin', sans-serif;
 }
 
 .container-competence {
     display: grid;
     grid-template-rows: repeat(2,1fr);
     grid-template-columns: repeat(3,1fr);
-    padding-top:30px;
+    padding-top:10px;
 }
 
 .download-now img{
@@ -115,13 +104,14 @@ svg, .available-on-item img{
 .available-on-item{
     text-align: center;
     position: relative;
+    border-bottom:1px solid #FFFFFF;
     -moz-transition:all 1s;
     -o-transition:all 1s;
     -webkit-transition:all 1s;
 }
 
 .available-on-item:hover{
-    background-color:#535C6D;
+    border-bottom:1px solid #535C6D;
 }
 
 .available-on-item img, .available-on-item svg{
@@ -129,8 +119,8 @@ svg, .available-on-item img{
     text-align: center;
     opacity: 1;
     font-size:40px;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     transition: all 1s;
     -moz-transition: all 1s;
     -o-transition: all 1s;
@@ -139,7 +129,7 @@ svg, .available-on-item img{
 
 
 .available-on-item:hover img, .available-on-item:hover svg {
-    opacity:0.05;
+    opacity:0.5;
 }
 
 .available-on-inner{
@@ -155,9 +145,9 @@ svg, .available-on-item img{
 .available-on-inner h2{
     text-align: center;
     font-weight: 300;
-    color: #FFFFFF;
+    color: #353B49;
     font-size:38px;
-    font-family:'Oregano', cursive;
+    font-family: 'Cabin', sans-serif;
 }
 
 @media screen and (min-width: 320px) {
@@ -184,7 +174,7 @@ svg, .available-on-item img{
 }
 .image-creation:hover {
     transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .image-creation {
@@ -205,6 +195,7 @@ body {
 .page-footer {
     background-color: rgb(182, 207, 229);
     color: #FFFFFF;
+    font-family: 'Cabin', sans-serif;
 }
 
 .boutton-me-contacter {
@@ -226,5 +217,4 @@ label {
     border-bottom: 1px solid #005eed !important;
     box-shadow: 0 1px 0 0 #005eed !important;
 }
-
 
