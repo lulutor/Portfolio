@@ -1,7 +1,10 @@
 
 /*******************Fonts**********************/
+
 @import url('https://fonts.googleapis.com/css?family=Cabin|Josefin+Slab');
+
 /*******************Général********************/
+
 .body{
     margin: 0px;
     font-size: 16px;
@@ -21,6 +24,7 @@ html
 {
 overflow-x: hidden;
 }
+
 /*******************MenuSidenav****************/
 
 a.brand-logo {
@@ -38,19 +42,18 @@ a.brand-logo {
     background-color:white;
 }
 
+.user-view{
+    background-color: #554180;
+}
+
+/*******************Profil*********************/
+
 .container-background {
     background-image: url('../images/background-profil.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     background-size: cover;
-
-
 }
-
-.user-view{
-    background-color: #554180;
-}
-/*******************Profil*********************/
 
 .profil_container {
     text-align: center;
@@ -63,7 +66,7 @@ a.brand-logo {
     text-shadow:2px black;
 }
 
-.profil_container h5 {
+.profil_container img {
     margin-top:100px;
     margin-bottom:100px;
 }
@@ -78,6 +81,7 @@ a.brand-logo {
 }
 
 /*******************Parallax********************/
+
 .image-parallax {
     background-size:contain;
 }
@@ -144,11 +148,6 @@ svg, .available-on-item img{
     -webkit-transition: all 1s;
 }
 
-
-.available-on-item:hover img, .available-on-item:hover svg {
-    opacity:0.5;
-}
-
 .available-on-inner{
     position: absolute;
     bottom:93px;
@@ -176,6 +175,11 @@ svg, .available-on-item img{
     opacity: 1;
 }
 
+.available-on-item:hover {
+    transform: scale(1.20); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+   
+}
+
 /*******************Créations*******************/
 
 .container-background-creation {
@@ -198,6 +202,7 @@ svg, .available-on-item img{
 .image-creation {
     cursor: pointer;
 }
+
 /*********************Footer********************/
 
 body {
