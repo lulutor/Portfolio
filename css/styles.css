@@ -48,7 +48,7 @@ a.brand-logo {
 }
 
 .user-view{
-    background-color: rgb(182, 207, 229);
+    background-color: #554180;
 }
 /*******************Profil*********************/
 
@@ -211,7 +211,7 @@ body {
   }
 
 .page-footer {
-    background-color: rgb(182, 207, 229);
+    background-color: #42375C;
     color: #FFFFFF;
     font-family: 'Cabin', sans-serif;
 }
